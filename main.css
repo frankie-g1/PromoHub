@@ -1,0 +1,47 @@
+html{
+    font-size: 22px
+}
+
+body{
+    background-color: #333;
+    color: whitesmoke;
+}
+
+table, tr, th, td, caption{
+    
+    border:1px solid#eee;
+
+    /* This affects width of table and 100% sets the whole table
+        to fit whole website, to make it a fixed width: [number]px */
+    width: 100%;
+
+    height: 50px;
+
+    /*For reason this is needed or else the first column takes up
+        too much space*/
+    table-layout: fixed;
+
+    font-family: 'Courier New', Courier, monospace;
+    border-collaspe: collaspe;
+    padding: 0.5rem;
+}
+
+button{
+    background-color: red;
+    color: white;
+    border: 2px solid;
+    border-radius: 8px;
+    width: 275px;
+    height: 70px;
+}
+
+.Website{
+    background-color:rgb(97, 97, 190);
+}
+.Youtube{
+    background-color:rgb(243, 66, 90);
+}
+
+caption{
+    font-size: 60px;
+}
