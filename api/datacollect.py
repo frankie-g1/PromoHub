@@ -1,3 +1,4 @@
+from distutils.command.upload import upload
 from googleapiclient.discovery import build
 import httplib2
 import json
@@ -38,8 +39,11 @@ def retrieve_description(channel_id):
     # extract description(s)
     description = items_content.split("description\": \"")[1].split("thumbnails")[0] # has some trailing ", " - but for the most part it won't affect the parsing logic
 
+    # extract upload time 
+    upload_date = items_content.split("publishedAt\" : \"")[1].split("channelID")[0] # ISO 8601 format
+    
     # Logic below:
-    # condition 1: return early on any sign of no new upload
+    # condition 1: return early on any sign of no new upload (same original upload date)
     # condition 2: new upload and proceed to store in database
     print(description) 
     
