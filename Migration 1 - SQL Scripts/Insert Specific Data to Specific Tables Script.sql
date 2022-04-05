@@ -7,9 +7,6 @@ INSERT INTO PromoCode_Table VALUES
 INSERT INTO Product_Table VALUES
 ('#codpartner'), ('BetterHelp'), ('Sidekick'), ('Audible'), ('GFuel'), ('#codpartner'), ('Terraria'), ('Genshin Impact');
 
-INSERT INTO ReleaseDate_Table VALUES
-('2022-03-19'), ('2022-03-28'), ('2022-03-27'), ('2022-03-22'), ('2022-03-29'), ('2022-03-28'), ('2022-03-23'), ('2022-02-25');
-
 INSERT INTO WebsiteLink_Table VALUES
 ('In-Game Redeem'), ('https://www.betterhelp.com/get-started/
     ?go=true&transaction_id=1027030e55542fb236be44c796aa39&utm_source=affiliate&utm_campaign=123&utm_medium=
