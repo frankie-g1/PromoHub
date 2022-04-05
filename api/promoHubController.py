@@ -1,6 +1,7 @@
 import MySQLdb as mysql
 import pandas as pd
 from flask_restful import Resource, request
+from flask import jsonify
 
 class PromoHubController(Resource):
 
@@ -9,7 +10,8 @@ class PromoHubController(Resource):
         cur  = db.cursor()
         cur.execute("SELECT * FROM creator")
         v = cur.fetchall()
-        print(v)
+        
+        jsaa = jsonify(v)
 
-        return (v)
+        return (jsaa)
         
