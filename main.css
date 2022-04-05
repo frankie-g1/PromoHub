@@ -1,0 +1,110 @@
+html{
+    font-size: 22px
+}
+
+body{
+    background-color: rgb(158, 192, 255);
+    color: whitesmoke;
+}
+
+table, tr, th, td, caption{
+
+    /*
+    to see border color
+    border:1px solid#eee;
+    */
+    border: none;
+
+    /* This affects width of table and 100% sets the whole table
+        to fit whole website, to make it a fixed width: [number]px */
+    width: 100%;
+
+    height: 50px;
+
+    /*For reason this is needed or else the first column takes up
+        too much space*/
+    table-layout: fixed;
+
+    font-family: 'Trebuchet MS','Lucida Sans', Arial;
+    
+    border-collaspe: collaspe;
+    padding: 0.5rem;
+
+    color:black;
+    border-spacing:0;   
+}
+
+th{
+    background-color: rgb(226, 124, 124);
+}
+
+tr{
+    
+    background-color: blueviolet;
+
+}
+
+table th:nth-child(even){
+    background: rgb(80, 179, 170)
+}
+
+table th:nth-child(odd){
+    background:rgb(148, 214, 189)
+}
+
+
+table tr:nth-child(odd){
+    background: rgb(168, 226, 226);
+}
+
+table tr:nth-child(even){
+    background: rgb(205, 235, 235)
+}
+
+button{
+    background-color: red;
+    color: white;
+    border: 2px solid;
+    border-radius: 8px;
+    width: 275px;
+    height: 70px;
+}
+
+.input{
+    background-color: rgb(182, 208, 255);
+    border-radius:8px;
+    width: 400px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 30px;
+    left: 45px;
+}
+
+.subinput{
+    background-color: rgb(20, 91, 223);
+    border-radius:8px;
+    width: 250px;
+    height: 40px;
+    color: white;
+}
+
+::placeholder{
+    color: rgb(71, 134, 163);
+}
+
+.creator{
+    background-color: rgb(150, 112, 255);
+    width: 190px;
+    height: 40px;
+}
+.Website{
+    background-color:rgb(97, 97, 190);
+}
+.Youtube{
+    background-color:rgb(243, 66, 90);
+}
+
+caption{
+    font-size: 60px;
+}
