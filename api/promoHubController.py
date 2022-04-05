@@ -6,12 +6,11 @@ from flask import jsonify
 class PromoHubController(Resource):
 
     def get(self):
+        
         db = mysql.connect(host="localhost", user="root", passwd="woodenHand12_(", db="promohub_schema")
         cur  = db.cursor()
         cur.execute("SELECT * FROM creator")
         v = cur.fetchall()
-        
-        jsaa = jsonify(v)
-
-        return (jsaa)
-        
+        #jsaa = jsonify(v)
+        #print('here')
+        return ({'body':v}, 200)

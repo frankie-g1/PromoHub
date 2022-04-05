@@ -13,6 +13,8 @@ api = Api(app)
 api.add_resource(PromoHubController, '/')
 
 
+
+
 if __name__ == '__main__':
     # starts youtube api data collection
     app.run(port=5000, debug=True)

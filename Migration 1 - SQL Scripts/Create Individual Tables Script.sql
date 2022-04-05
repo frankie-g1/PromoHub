@@ -6,7 +6,7 @@ CREATE TABLE Creator_Table
 
 CREATE TABLE PromoCode_Table
 (
- PromoCode		varchar(30)
+    PromoCode		varchar(30)
 
 );
 
