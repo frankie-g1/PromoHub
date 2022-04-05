@@ -38,12 +38,6 @@ th{
     background-color: rgb(226, 124, 124);
 }
 
-tr{
-    
-    background-color: blueviolet;
-
-}
-
 table th:nth-child(even){
     background: rgb(80, 179, 170)
 }
@@ -51,7 +45,6 @@ table th:nth-child(even){
 table th:nth-child(odd){
     background:rgb(148, 214, 189)
 }
-
 
 table tr:nth-child(odd){
     background: rgb(168, 226, 226);
