@@ -9,8 +9,11 @@ class PromoHubController(Resource):
         
         db = mysql.connect(host="localhost", user="root", passwd="woodenHand12_(", db="promohub_schema")
         cur  = db.cursor()
-        cur.execute("SELECT * FROM creator")
+        cur.execute("SELECT * FROM promohub")
         v = cur.fetchall()
-        #jsaa = jsonify(v)
-        #print('here')
-        return ({'body':v}, 200)
+        print('v type')
+        print(type(v))
+        jsaa = jsonify(v)
+        print('here')
+        print(jsonify(v))
+        return jsaa
