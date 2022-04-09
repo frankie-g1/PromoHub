@@ -1,7 +1,7 @@
 
-var $rows = $('#table tr:not(:first)');
 //Can only take from specific id
 $('#searchbar').keyup(function() {
+    var $rows = $('#table tr:not(:first)');
 
 
     //takes all values from the searchbar and turn them to lowercase
@@ -21,6 +21,7 @@ $('#searchbar').keyup(function() {
 
 $('#creatorbar').keyup(function() {
 
+    var $rows = $('#table tr:not(:first)');
 
 
     //takes all values from the searchbar and turn them to lowercase
@@ -41,6 +42,8 @@ $('#creatorbar').keyup(function() {
 });
 
 $('#promocodebar').keyup(function() {
+    var $rows = $('#table tr:not(:first)');
+
 
     //takes all values from the searchbar and turn them to lowercase
     //trim values first, than made it lowercase
@@ -58,6 +61,8 @@ $('#promocodebar').keyup(function() {
 });
 
 $('#productbar').keyup(function() {
+    var $rows = $('#table tr:not(:first)');
+
 
     //takes all values from the searchbar and turn them to lowercase
     //trim values first, than made it lowercase

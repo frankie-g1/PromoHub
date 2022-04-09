@@ -23,6 +23,7 @@
             </form>
         </caption>
         
+        <tbody id="mytbody">
         <th>Creator
             <form id="textbar">
                 <input type="text" id="creatorbar" class ="subinput" placeholder="Search...">
@@ -45,15 +46,15 @@
         <th>Youtube Link
         </th>
 
-        <tbody>
-            <!--Populate with populateTable.js-->
-            
         </tbody>
 
+        
+
     </table>
+    
 
     <script src="{{url_for('static', filename='populateTable.js')}}"></script>
-    <script src="{{url_for('static', filename='searchbar.js')}}"></script>
+    <script src="{{url_for('static', filename='searchbar.js')}}"></script> 
 
 </body> 
 

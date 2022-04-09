@@ -20,8 +20,9 @@ console.log('here');
       }).then(function(data) {
         console.log("Get request to database")
         console.log(data)
-        var table = document.getElementsByTagName('tbody')[0]
-       
+        var tbody = document.getElementById('table').getElementsByTagName('tbody')[0];
+        console.log("TBODY");
+        console.log(tbody);
         
         data.forEach(function(object) {
             var tr = document.createElement('tr')
@@ -44,7 +45,8 @@ console.log('here');
                         </button>
                     </a>        
                 </td>`;
-            table.appendChild(tr);
+            
+            tbody.append(tr);
         })
     })
 
