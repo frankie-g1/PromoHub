@@ -37,7 +37,7 @@ Installation Steps:
 
 Open CMD terminal 
 
-pip install :
+pip install
     flask
     flask_restful
     flask_mysqldb
