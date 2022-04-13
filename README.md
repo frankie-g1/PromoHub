@@ -61,13 +61,13 @@ Open terminal
   
   ```
   CMD 
-  > set FLASK_APP=hello
+  > set FLASK_APP=main
   > flask run
    * Running on http://127.0.0.1:5000/
   ```
   ```
   Powershell
-  > $env:FLASK_APP = "hello"
+  > $env:FLASK_APP = "main"
   > flask run
     * Running on http://127.0.0.1:5000/
           
